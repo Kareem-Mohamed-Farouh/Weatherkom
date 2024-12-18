@@ -54,7 +54,7 @@ function displayWeathertoday(http) {
   todayName.innerHTML = todayname;
   todayDate.innerHTML = todayday + " " + todaydatee;
 
-  locationn.innerHTML = http.location.region;
+  locationn.innerHTML = http.location.name;
   tempToday.innerHTML = http.current.temp_c + `<sup>o</sup>C`;
 
   let icon = `https:` + http.current.condition.icon;
