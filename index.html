@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherkom</title>
+
+    <!-- <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css"> -->
+    <!--============= font awsome======= -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--======== media quary file=========== -->
+    <link rel="stylesheet" href="css/query-style.css">
+    <!-- =======link boot strabe css file ======== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--=============index/main css file =========== -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--========== add icon in title=========== -->
+    <link rel="icon" href="image/logo.png">
+</head>
+
+<body>
+    <!--start  nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container ">
+            <a class="navbar-brand  d-flex " href="#">
+                <img src="image/logo.png" class="img-fluid" alt="logo">
+                <div class="ms-2 logo-type ">
+                    <div class="logo-title fs-6 fw-bold">Weather</div>
+                    <div class="logo-describtions   fw-light">tagline goes here</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-lg-0     ">
+                    <li class="nav-item ">
+                        <a class="nav-link active  " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link " href="#">News</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link " href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end  nav bar -->
+    <main>
+        <section >
+            <div class="demo">
+                <div class="container  pt-5 ">
+                    <div class="input-search position-relative">
+                        <input id="findLocation" class="form-control p-3   rounded-5" type="text"
+                            placeholder="Find your Location...">
+                        <div
+                            class="btn find m-1 text-center d-flex align-items-center fs-5 px-5 text-white position-absolute end-0 rounded-5 top-0 bottom-0">
+                            Find</div>
+                    </div>
+                </div>
+            </div>
+            <div class="part">
+                <div class="container-fluid position-relative">
+                    <div class="table-weather   position-absolute start-0 end-0 ">
+                        <div class="container position-relative">
+                            <!-- cards that display the Weather for 3 days -->
+                            <div class="card-group rounded-top-2 ">
+<!-- today -tomorrow - after tomorrow day -->
+                                <div class="card  today-card">
+                                    <div class="card-footer d-flex justify-content-between px-2">
+                                        <div class=" today-name">Last updated 3 </div>
+                                        <div class=" today-date">Last updated </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="location">Cairo</h5>
+                                        <p class="temp-today py-2 fs-1 fw-bold">21.2</p>
+                                        <img src="image/113 (1).png" class="icon-day" alt="lolo">
+                                        <p class="stat status py-2 fs-5 fw-bold">This ivdvdnv</p>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <div class="umberella c-img d-flex">
+                                            <img src="image/icon-umberella.png" alt="umberella">
+                                            <div class=" rotoba ms-2">30%</div>
+                                        </div>
+
+                                        <div class="win c-img d-flex">
+                                            <img src="image/icon-wind.png" alt="wind">
+                                            <div class=" wind ms-2">18</div>
+                                        </div>
+                                        <div class="compass c-img d-flex">
+                                            <img src="image/icon-compass.png" alt="compass">
+                                            <div class="wind-dir ms-2">east</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card  tomorrow-card text-center ">
+                                    <div class="card-footer text-center px-2">
+                                        <div class=" tomorrow-name ">tommorow </div>
+
+                                    </div>
+                                    <div class="card-body">
+
+                                        <img src="image/113 (1).png" class="icon-tomorow" alt="lolo">
+                                        <div class="temp-tommorow-max  fs-5 fw-bold">21.2<sup>o</sup>C</div>
+                                        <div class="temp-tommorow-min pt-1 fs-6 fw-bolder">12.1<sup>o</sup></div>
+                                        <p class="stat  statusTommorow pt-3 fs-6 ">partiy cloudy</p>
+                                    </div>
+
+                                </div>
+                                <div class="card after-tomorrow-card text-center ">
+                                    <div class="card-footer text-center px-2">
+                                        <div class=" after-tomorrow-name ">Last updated 3 </div>
+
+                                    </div>
+                                    <div class="card-body">
+
+                                        <img src="image/113.png" class="icon-aft-tomorrow" alt="lolo">
+                                        <div class="temp-aft-max  fs-5 fw-bold">21.2 c</div>
+                                        <div class="temp-aft-min pt-1 fs-6 fw-bolder">This i.</div>
+                                        <p class="stat  status-aft  pt-3 fs-6 ">partiy cloudy</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--============start  Footer ====-->
+        <footer>
+            <div class="part-2">
+                <div class="container  p-5 ">
+                    <div class="row">
+                        <div class="col-md-8  ">
+                            <div class="input-search position-relative">
+                                <input id="find" class="form-control p-3   rounded-5" type="text"
+                                    placeholder="Find your Location...">
+                                <div
+                                    class="btn find m-1 text-center d-flex align-items-center fs-5 px-5 text-white position-absolute end-0 rounded-5 top-0 bottom-0">
+                                    Find</div>
+                            </div>
+                            <div class=" p-3 text-white">Copyright 2014 Company name. Designed by Themezy. All rights
+                                reserved</div>
+                        </div>
+                        <div class="col-md-4  ">
+                            <div class="icons d-flex justify-content-around fs-4 ">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-google"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    <!--=============end footer=============-->
+    </main>
+
+<!-- ===============boot strab js file=========== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+<!-- ========main js file =============-->
+    <script src="js/main.js"></script>
+</body>
+</html>
