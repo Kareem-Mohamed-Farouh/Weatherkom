@@ -49,8 +49,9 @@ body{
     background-size:cover ;
     background-attachment: scroll;
 }
-.part{height: 350px;}
-.part-2{height: 200px;
+/* .part{height: 350px;} //مصيبة  */
+ .part-2{
+/*height: 200px; مصيبة تانيه   */
 background-color: #10131d;}
 
 
